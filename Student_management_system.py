@@ -36,7 +36,32 @@ class Student:
                 print(f"Student {self._student_id} has been dropped.")
 
 
+def menu():
+    while True:
+        print("\n----- Student Management System -----")
+        print("1. View All Students")
+        print("2. Enroll Student")
+        print("3. Drop Student")
+        print("4. Exit")
+        choice = input("Enter your choice (1-4): ")
 
+        if choice == '1':
+                print("\n| {:<10} | {:<20} | {:<20} | {:<12} |".format("ID", "Name", "Department", "Status"))
+                print("-" * 75)
+                
+
+
+        elif choice == '2':
+            pass
+        elif choice == '3':
+            pass
+
+        elif choice == '4':
+            pass
+        else:
+            print("Invalid choice. Please try again.")
+
+menu()
 
 st1 = Student(101, "Mahir", "CSE", True)
 print(StudentDatabase.student_list[0]["name"])
